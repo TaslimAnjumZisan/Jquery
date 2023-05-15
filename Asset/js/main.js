@@ -9,24 +9,35 @@ $(document).ready(function () {
     //     //$('.two h2 ').hide(3000);
 
     // });
-    /* This code is using jQuery to add a click event listener to all `<Button>` elements on the page.
-    When a button is clicked, the function is triggered and the `event` object is passed as a
-    parameter. The function then checks the `id` of the clicked button using `event.target.id`. If
-    the `id` is `btn1`, it hides the `<p>` element with class `Lorem` inside the element with class
-    `one` using the `hide()` method with a duration of 2000 milliseconds. If the `id` is `btn2`, it
-    hides the `<p>` element with class `Lorem` inside the element with class `two`. */
-    $('Button').click(function (event) {
-        console.log(event.target.id);
-        if(event.target.id=='btn1')
-        {
-            $('.one p.Lorem').hide(2000);
-        }
-        if(event.target.id=='btn2')
-        {
-            $('.two p.Lorem').hide(2000);
-        }
+    // // /* This code is using jQuery to add a click event listener to all `<Button>` elements on the page.
+    // // When a button is clicked, the function is triggered and the `event` object is passed as a
+    // // parameter. The function then checks the `id` of the clicked button using `event.target.id`. If
+    // // the `id` is `btn1`, it hides the `<p>` element with class `Lorem` inside the element with class
+    // // `one` using the `hide()` method with a duration of 2000 milliseconds. If the `id` is `btn2`, it
+    // // hides the `<p>` element with class `Lorem` inside the element with class `two`. */
+    // $('Button').click(function (event) {
+    //     // console.log(event.target.id);
+    //     console.log(event.target.class);
+    //     if(event.target.id=='btn1')
+    //     {
+    //         $('.one p.Lorem').hide(2000);
+    //     }
+    //     if(event.target.id=='btn2')
+    //     {
+    //         $('.two p.Lorem').hide(2000);
+    //     }
       
-    });
+    // });
+
+    // $(document).on("click", function (event) {
+
+    //     alert(event.target.className);
+
+    // });
+
+    // $('Button'.click(function){
+    //     if($())
+    // })
 
 //   /* This code is using jQuery to add a click event listener to all `<Button>` elements on the page.
 //   When any button is clicked, it hides the first `<p>` element inside the element with class `three`
@@ -55,9 +66,66 @@ $(document).ready(function () {
 //         $('p[class="three2"]').remove(); 
 
 //     });
+    // $('button').click(function () {
+    //     $("a[target!='_blank']").remove();
         
+//     // });
+// /* This code is using jQuery to add event listeners to different elements on the page. */
+
+//     $('button').dblclick(function () {
+//         alert("double clicked");
+//     })
+//     $('.four').mouseenter(function () {
+//         alert("hello mouse enter");
+//     });
+
+//     $('.four').mouseup(function () {
+//         alert("hello mouse up");
+//     });
+//     $('.four').mousedown(function () {
+//         alert("hello clciked");
+//     });
+//     $('.four').hover(function() {
+//         alert("Leave");
+//     },function() {
+//         alert("Leave");
+//     });
     
+//    /* This code is using jQuery to add a click event listener to all `<button>` elements on the page.
+//    When any button is clicked, it triggers an alert message with the text "Hello". The `on()` method
+//    is used to attach an event handler function for one or more events to the selected elements. In
+//    this case, the `click` event is being listened for. */
+//     $('button').on('click', function () {
+//         alert("Hello");
+//     });
+//    /* This code is using jQuery to add event listeners for click, double click, and mouse enter events
+//    to all `<Button>` elements on the page. When any button is clicked, it triggers an alert message
+//    with the text "click". When any button is double-clicked, it triggers an alert message with the
+//    text "Double click". When the mouse enters any button, it triggers an alert message with the text
+//    "Mouse Enter". The `on()` method is used to attach event handler functions for one or more events
+//    to the selected elements. */
+//     $('Button').on({
+//         click: function () {
+//             alert("click");
+//         },
+//         dblclick: function () {
+//             alert("Double click");
+//         },mouseenter: function () {
+//             alert("Mouse Enter");
+//         }
+//     });
+
+    $('button').click(function () {
+        $('.one >h2').hide(2000);
+    });
     
+    $('button').click(function () {
+$(this).$('.two > h2').hide(2000);
+    });
+    
+    $('button').on('click', function () {
+        $('.two > h2').hide(2000);
+    });
 
 });
 
