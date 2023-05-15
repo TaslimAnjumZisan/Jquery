@@ -115,16 +115,36 @@ $(document).ready(function () {
 //         }
 //     });
 
-    $('button').click(function () {
-        $('.one >h2').hide(2000);
-    });
+//     /* This code is adding event listeners to the `<button>` elements on the page. When any button is
+//     clicked, it hides the `<h2>` element inside the element with class `one` using the `hide()`
+//     method with a duration of 2000 milliseconds. It also hides the `<h2>` element inside the element
+//     with class `two` using the `hide()` method with a duration of 2000 milliseconds. The `on()`
+//     method is used to attach an event handler function for the `click` event to the selected
+//     elements. */
+//     $('button').click(function () {
+//         $('.one >h2').hide(2000);
+//     });
     
-    $('button').click(function () {
-$(this).$('.two > h2').hide(2000);
-    });
+//     $('button').click(function () {
+// $(this).$('.two > h2').hide(2000);
+//     });
     
-    $('button').on('click', function () {
-        $('.two > h2').hide(2000);
+//     $('button').on('click', function () {
+//         $('.two > h2').hide(2000);
+//     });
+
+    // /* This code is adding a click event listener to all `<button>` elements on the page. When any
+    // button is clicked, it hides all `<p>` elements inside the element with class `box` using the
+    // `hide()` method with a duration of 'slow'. */
+    // $('button').click(function () {
+    //     $('.box p').hide('slow');
+    // });
+    
+    $('.hide_me').click(function () {
+        $('.box p').hide(); 
+    });
+    $('.show_me').click(function () {
+        $('.box p').show(); 
     });
 
 });
