@@ -140,13 +140,95 @@ $(document).ready(function () {
     //     $('.box p').hide('slow');
     // });
     
-    $('.hide_me').click(function () {
-        $('.box p').hide(); 
-    });
-    $('.show_me').click(function () {
-        $('.box p').show(); 
-    });
+    // /* This code is adding click event listeners to elements with class `hide_me` and `show_me`. When
+    // an element with class `hide_me` is clicked, it hides all `<p>` elements inside the element with
+    // class `box` using the `hide()` method. When an element with class `show_me` is clicked, it shows
+    // all `<p>` elements inside the element with class `box` using the `show()` method. */
+    // $('.hide_me').click(function () {
+    //     $('.box p').hide(); 
+    // });
+    // $('.show_me').click(function () {
+    //     $('.box p').show(); 
+    // });
+    
+   
+    // /* This code is adding event listeners to different `<button>` elements on the page. When a button
+    // is clicked, it triggers a fade animation on the elements with class `box2` or `box3`. The
+    // `fadeOut()` method is used to gradually reduce the opacity of the selected elements until they
+    // are hidden. The `fadeIn()` method is used to gradually increase the opacity of the selected
+    // elements until they are fully visible. The `fadeToggle()` method is used to toggle the
+    // visibility of the selected elements by fading them in or out depending on their current state.
+    // The `fadeTo()` method is used to gradually change the opacity of the selected elements to a
+    // specified value. */
+    // $('button').click(function () {
+    //     $('.box2').fadeOut('fast'); 
+    // });
+    //     //or
+    // $("button").click(function () {
+    //     $('.box3').fadeIn('slow');
+    // });
+    //     //or
+    // $('button').click(function () {
+    //     $('.box3').fadeToggle('slow');
+    // });
 
+    // $('button').click(function () {
+    //     $('.box3').fadeTo('slow', 0.4);
+    // });
+       
+    // $('button').click(function(){
+    //     $('box2').fadeTo('slow',0.7);
+    // });
+    
+    
+    // //slide show diffrent way
+    // $('.box4 h2').click(function () {
+    //     $('.about-box ').slideDown('slow');
+    // });
+    // $('.box4 h2').click(function () {
+    //     $('.about-box ').slideUp('slow');
+    // });
+    // $('.box4 h2').hover(function() {
+    //     $('.about-box').slideToggle(2000);
+    // });
+    // $('.box4 h2').click(function () {
+    //     $('.about-box ').slideToggle(2000);
+    // });
+    
+    // $('button').click(function () {
+        
+    //     $('.box5').slideUp(1000, function () {
+    //         alert("Slide up cpmplete"); 
+    //     });
+    // });
+
+    // $('button').click(function () {
+    //     $('.box6').animate({
+    //         left: '50%',
+    //         width: '150px',
+    //         height:'200px'
+
+    //     });
+    // });
+    
+    $('button').click(function () {
+        $('.box6').animate({
+            left: '20%'
+        }, 1000);
+        $('.box6').animate({
+            width: '300px',
+            height: '300px',
+            fontSize:'25px'
+        }, 1000);
+        $('.box6').animate({
+            left: '0%'
+        }, 1000);
+        $('.box6').animate({
+            width: '100px',
+            height: '100px',
+            fontSize:'16px'
+        }, 1000);
+    });
 });
 
 // $(function(){

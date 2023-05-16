@@ -19,3 +19,51 @@ h2:hover{
     display: none;
     
 } */
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    display: none;
+}
+.box4{
+    width: 40%;
+    background-color: #2980b9;
+    margin: auto;
+    padding: 15px;
+    color: #FFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box4 h2{
+    background-color: lawngreen;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+}
+.about-box{
+    background-color: darkgrey;
+    padding: 5px;
+    border-radius: 10px;
+    display: none;
+}
+.about-box p{
+    line-height: 25px;
+   
+}
+
+.box5{
+    height: 100px;
+    width: 100px;
+    background-color:red;
+}
+
+.box6{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: crimson;
+}
